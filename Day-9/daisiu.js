@@ -63,10 +63,10 @@ function daiSiuGame() {
         
         // Determine the outcome
         let playerWins;
-        if (diceSum >= 4 && diceSum <= 10 && playerChoice === 'T') {
+        if (diceSum >= 4 && diceSum <= 10 && playerChoice === 'X') {
             playerMoney += betAmount;
             console.log(`You won $${betAmount}`)
-        } else if (diceSum >= 11 && diceSum <= 17 && playerChoice === 'X') {
+        } else if (diceSum >= 11 && diceSum <= 17 && playerChoice === 'T') {
             playerMoney += betAmount;
             console.log(`You won $${betAmount}`)
         } else {
